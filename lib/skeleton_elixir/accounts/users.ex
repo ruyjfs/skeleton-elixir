@@ -8,6 +8,10 @@ defmodule SkeletonElixir.Accounts.User do
     field :name, :string
     field :password_hash, :string
 
+    # Virtual fields:
+    field :password, :string, virtual: true
+    field :password_confirmation, :string, virtual: true
+
     has_many :posts, Content.Post, foreign_key: :author_id
     has_many :contacts, Accounts.Contact
 

@@ -41,9 +41,12 @@ defmodule SkeletonElixir.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:absinthe_plug, "~> 1.4"},
-      {:poison, "~> 2.1.0"},
-      {:absinthe, "~> 1.4"},
+      {:absinthe_plug, "~> 1.4"}, # GraphQL Interface
+      {:poison, "~> 2.1.0"}, # GraphQL Json
+      {:absinthe, "~> 1.4"}, # GraphQL
+      # {:comeonin, "~> 4.0"}, # Auth
+      # {:bcrypt_elixir, "~> 1.0"}, # Auth
+      # {:guardian, "~> 1.0"} # Auth
     ]
   end
 
